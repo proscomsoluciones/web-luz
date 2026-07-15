@@ -27,10 +27,10 @@ export default function Header() {
 
           {/* Left Menu Button and Navigation Links */}
           <div className="flex items-center gap-6">
-            {/* Logo Space */}
-            <div className="w-28 h-8 border border-dashed border-zinc-700 rounded flex items-center justify-center text-[9px] font-black uppercase text-zinc-500 tracking-wider">
-              Logo Space
-            </div>
+            {/* Logo */}
+            <Link href="/" className="font-sans text-xl font-black tracking-tight text-white select-none hover:opacity-95 mr-2">
+              Bloomberg
+            </Link>
 
             <button
               type="button"

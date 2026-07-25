@@ -38,7 +38,7 @@ export default function Header() {
               className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 text-white"
               aria-label="Menu"
             >
-              <div className="h-0.5 w-5 bg-white" />
+              <div className="h-0.5 w-5 bg-white" /> 
               <div className="h-0.5 w-5 bg-white" />
               <div className="h-0.5 w-5 bg-white" />
             </button>

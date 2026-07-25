@@ -29,7 +29,7 @@ export default function Header() {
           <div className="flex items-center gap-6">
             {/* Logo */}
             <Link href="/" className="font-sans text-xl font-black tracking-tight text-white select-none hover:opacity-95 mr-2">
-              Bloomberg
+              Segunda Derivada
             </Link>
 
             <button

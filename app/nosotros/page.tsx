@@ -1,87 +1,77 @@
 const CAREER_LINKS = [
-  { label: "What we do", href: "#" },
-  { label: "Our culture", href: "#" },
-  { label: "Early careers", href: "#" },
-  { label: "Experienced professionals", href: "#" },
+  { label: "Qué hacemos", href: "#" },
+  { label: "Nuestra cultura", href: "#" },
+  { label: "Primeros pasos profesionales", href: "#" },
+  { label: "Profesionales con experiencia", href: "#" },
 ];
 
 const VALUE_LINKS = [
-  { label: "Inclusion", href: "#" },
-  { label: "Philanthropy", href: "#" },
-  { label: "Technology", href: "#" },
-  { label: "Sustainability", href: "#" },
+  { label: "Inclusión", href: "#" },
+  { label: "Comunidad", href: "#" },
+  { label: "Tecnología", href: "#" },
+  { label: "Sostenibilidad", href: "#" },
 ];
 
 const FOCUS_AREAS = [
-  "The Arts",
-  "Education",
-  "Environment",
-  "Government Innovation",
-  "Public Health",
+  "Arte y Cultura",
+  "Educación",
+  "Medio Ambiente",
+  "Innovación Pública",
+  "Salud",
 ];
 
 const STORIES = [
   {
-    tag: "Study",
-    title: "Meet ASKB: Bloomberg's first Law Agency AI to the Bloomberg Terminal",
-    description: "Meet ASKB: Bloomberg's first Law Agency AI to the Bloomberg Terminal. Learn how this new capability helps legal professionals gather, analyze, and apply regulatory and legal information directly in their workflows.",
-    img: "/askb_go.png",
+    tag: "Cultura",
+    title: "Cómo formamos a la próxima generación de periodistas de datos",
+    description: "Un vistazo a nuestro programa interno de mentoría, donde editores con experiencia acompañan a nuevos analistas en el manejo de fuentes primarias y verificación de datos.",
   },
   {
-    tag: "Article",
-    title: "Bloomberg Named 5th Best Place to Work in Technology & AI by Glassdoor",
-    description: "Glassdoor reviews show their perspective on what it's like to work here, highlights from employees on culture, career progression, and work-life balance.",
-    img: "/glassdoor_best_places.png",
+    tag: "Comunicado",
+    title: "Nuestro compromiso con el periodismo verificado en la región",
+    description: "Reafirmamos los estándares editoriales que guían cada publicación, desde la verificación de fuentes hasta la corrección transparente de errores.",
   },
   {
-    tag: "Article",
-    title: "Building pathways in media: Emma Bowen Foundation students connect with Bloomberg mentors",
-    description: "A mentoring program helps Emma Bowen Foundation students connect with Bloomberg mentors, building pathways in media and communications through guidance, mock interviews, and career pathing.",
-    img: "/mentoring_pathways.png",
+    tag: "Cultura",
+    title: "Un programa de mentoría conecta a estudiantes con nuestro equipo editorial",
+    description: "Universitarios de distintas ciudades de la región participan en un programa de acompañamiento profesional con entrevistas simuladas y guía de carrera.",
   },
 ];
 
 export default function NosotrosPage() {
   return (
     <div className="flex flex-col bg-white text-zinc-950 font-sans flex-1">
-      
+
       {/* 1. Hero Section */}
       <section className="relative min-h-[480px] flex items-center bg-black text-white overflow-hidden">
-        {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
-          <img
-            src="/hero_office.png"
-            alt="Bloomberg office meeting"
-            className="w-full h-full object-cover object-center opacity-70"
-          />
+          <div className="w-full h-full bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-700 opacity-90" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent" />
         </div>
-        
-        {/* Hero Content */}
+
         <div className="relative z-10 mx-auto max-w-[1280px] w-full px-4 sm:px-6 py-20 flex flex-col items-start">
           <span className="text-[10px] sm:text-xs font-black uppercase tracking-[0.2em] text-zinc-400 mb-4">
-            Bloomberg
+            Segunda Derivada
           </span>
           <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl font-black leading-tight max-w-2xl mb-8 tracking-tight">
-            Where data, people and ideas intersect.
+            Información que conecta a quienes toman las decisiones más importantes.
           </h1>
           <button className="bg-white text-black hover:bg-zinc-200 transition-colors px-8 py-3.5 text-xs font-black uppercase tracking-wider rounded-none shadow-md">
-            SEARCH JOBS
+            Ver Vacantes
           </button>
         </div>
       </section>
 
-      {/* 2. Careers Section (Black Background) */}
+      {/* 2. Careers Section */}
       <section className="bg-black text-white border-t border-zinc-900">
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 py-16 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-            
-            {/* Left side text and links */}
+
             <div className="lg:col-span-6 flex flex-col justify-center">
               <h3 className="font-serif text-2xl sm:text-3xl font-black leading-tight mb-8">
-                Make it happen here: See where a career at Bloomberg could take you.
+                Haz que suceda aquí: descubre a dónde te puede llevar una carrera en Segunda Derivada.
               </h3>
-              
+
               <div className="flex flex-col border-t border-zinc-800 divide-y divide-zinc-800">
                 {CAREER_LINKS.map((link) => (
                   <a
@@ -97,39 +87,31 @@ export default function NosotrosPage() {
                 ))}
               </div>
             </div>
-            
-            {/* Right side image */}
+
             <div className="lg:col-span-6">
-              <div className="aspect-[4/3] w-full bg-zinc-900 border border-zinc-800 relative overflow-hidden rounded-md shadow-xl">
-                <img
-                  src="/team_collaboration.png"
-                  alt="Team collaboration"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <div className="aspect-[4/3] w-full bg-gradient-to-br from-zinc-700 to-zinc-900 border border-zinc-800 relative overflow-hidden rounded-md shadow-xl" />
             </div>
 
           </div>
         </div>
       </section>
 
-      {/* 3. Values Section (White Background) */}
+      {/* 3. Values Section */}
       <section className="bg-white text-zinc-950">
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 py-16 lg:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
-            
-            {/* Left side values & text */}
+
             <div className="lg:col-span-6">
               <h2 className="font-serif text-3xl sm:text-4xl font-black text-black mb-6">
-                Discover our values – and how we live them
+                Conoce nuestros valores y cómo los vivimos
               </h2>
               <p className="text-sm sm:text-base text-zinc-600 leading-relaxed mb-8 max-w-xl">
-                We believe profit and principles are not mutually exclusive. They reinforce one another.
-                And doing the right thing by our people, our customers, our communities and our planet
-                is also the best thing for our business.
+                Creemos que el rigor editorial y la sostenibilidad del negocio no son
+                objetivos opuestos: se refuerzan mutuamente. Hacer lo correcto con
+                nuestra audiencia, nuestro equipo y las comunidades donde operamos
+                es también lo mejor para el futuro de Segunda Derivada.
               </p>
-              
-              {/* Values 2x2 Grid */}
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
                 {VALUE_LINKS.map((value) => (
                   <a
@@ -145,51 +127,42 @@ export default function NosotrosPage() {
                 ))}
               </div>
             </div>
-            
-            {/* Right side image */}
+
             <div className="lg:col-span-6">
-              <div className="aspect-[4/3] w-full bg-zinc-100 border border-zinc-200 relative overflow-hidden rounded-md shadow-md">
-                <img
-                  src="/office_wood.png"
-                  alt="Modern office corridor"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <div className="aspect-[4/3] w-full bg-gradient-to-br from-zinc-200 to-zinc-400 border border-zinc-200 relative overflow-hidden rounded-md shadow-md" />
             </div>
 
           </div>
         </div>
       </section>
 
-      {/* 4. Face the Data / Philanthropy Section (Light Gray Background) */}
+      {/* 4. Community Impact Section */}
       <section className="bg-zinc-50 border-t border-b border-zinc-200 text-zinc-950">
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 py-16 lg:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
-            
-            {/* Left side text and stats */}
+
             <div className="lg:col-span-8 flex flex-col">
               <h2 className="font-serif text-3xl sm:text-4xl font-black text-black mb-6">
-                Face the data. Change the world.
+                Los datos importan. Actuamos con base en ellos.
               </h2>
               <p className="text-sm sm:text-base text-zinc-650 leading-relaxed mb-8 max-w-3xl">
-                Data is reality. If you face it, you can understand it. Then, you can do something about it.
-                We reinvest everything we earn from our business and we&apos;ve put it into our philanthropic
-                efforts - along with a host of our partners - to help save and improve lives across the globe.
+                Todo lo que aprendimos construyendo un negocio de información lo
+                aplicamos también a nuestro trabajo comunitario, apoyando causas
+                que fortalecen la educación, la cultura y el acceso a la información
+                en la región.
               </p>
-              
-              {/* Divider & highlighted stats */}
+
               <div className="mt-auto pt-6 border-t-4 border-black">
                 <p className="font-serif text-2xl sm:text-3xl md:text-4xl leading-tight text-black font-black">
-                  Bloomberg Philanthropies invests in <span className="text-blue-700">700 cities, 150 countries</span>
+                  Nuestra iniciativa comunitaria llega a <span className="text-blue-700">60 ciudades, 14 países</span>
                 </p>
               </div>
             </div>
-            
-            {/* Right side Focus Areas */}
+
             <div className="lg:col-span-4 flex flex-col justify-start">
               <div className="border-t border-black pt-4 mb-4">
                 <span className="text-[11px] font-black uppercase tracking-wider text-zinc-400 block mb-1">
-                  Focus areas
+                  Áreas de enfoque
                 </span>
                 <div className="h-0.5 w-full bg-zinc-200" />
               </div>
@@ -210,32 +183,24 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* 5. Bloomberg's Stories Section (White Background) */}
+      {/* 5. Stories Section */}
       <section className="bg-white text-zinc-950">
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6 py-16 lg:py-24">
           <h2 className="font-serif text-3xl font-black text-black mb-12 border-b border-zinc-200 pb-4">
-            Bloomberg&apos;s stories
+            Nuestras historias
           </h2>
-          
+
           <div className="flex flex-col gap-12 lg:gap-16">
             {STORIES.map((story, index) => (
               <article
                 key={index}
                 className="group cursor-pointer grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8 items-start pb-12 border-b border-zinc-150 last:border-b-0 last:pb-0"
               >
-                
-                {/* Story Image */}
+
                 <div className="md:col-span-4 lg:col-span-3">
-                  <div className="aspect-[4/3] sm:aspect-[16/10] md:aspect-square w-full bg-zinc-100 border border-zinc-200 relative overflow-hidden rounded-md shadow-xs">
-                    <img
-                      src={story.img}
-                      alt={story.title}
-                      className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-300"
-                    />
-                  </div>
+                  <div className="aspect-[4/3] sm:aspect-[16/10] md:aspect-square w-full bg-gradient-to-br from-zinc-200 to-zinc-400 border border-zinc-200 relative overflow-hidden rounded-md shadow-xs" />
                 </div>
-                
-                {/* Story Info */}
+
                 <div className="md:col-span-8 lg:col-span-9 flex flex-col justify-between h-full py-1">
                   <div>
                     <div className="flex items-center gap-3 mb-2">
@@ -251,8 +216,7 @@ export default function NosotrosPage() {
                       {story.description}
                     </p>
                   </div>
-                  
-                  {/* Arrow Indicator */}
+
                   <div className="text-xl text-black group-hover:translate-x-2 transition-transform duration-200">
                     →
                   </div>
@@ -264,15 +228,15 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* 6. Closing CTA (White Background) */}
+      {/* 6. Closing CTA */}
       <section className="bg-white pb-24">
         <div className="mx-auto max-w-[1280px] px-4 sm:px-6">
           <div className="flex flex-col items-center text-center border-t border-zinc-200 pt-16">
             <h2 className="font-serif text-3xl sm:text-4xl font-black text-black mb-8">
-              Make it happen here.
+              Haz que suceda aquí.
             </h2>
             <button className="bg-black hover:bg-zinc-800 text-white transition-colors px-10 py-4 text-xs font-black uppercase tracking-wider rounded-none shadow-md">
-              SEARCH JOBS
+              Ver Vacantes
             </button>
           </div>
         </div>

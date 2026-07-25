@@ -4,51 +4,43 @@ import { useState } from "react";
 
 const SHOWS = [
   {
-    title: "Bloomberg INVESTIGATES",
-    subtitle: "A DOCUMENTARY SERIES",
-    img: "/investigates.png",
+    title: "Segunda Derivada INVESTIGA",
+    subtitle: "SERIE DOCUMENTAL",
     duration: "45:00"
   },
   {
-    title: "Bloomberg PRIMER",
-    subtitle: "MICRO TO MACRO",
-    img: "/primer.png",
+    title: "Segunda Derivada PRIMER",
+    subtitle: "DE LO MICRO A LO MACRO",
     duration: "25:30"
   },
   {
-    title: "LEADERS",
-    subtitle: "with Francine Lacqua",
-    img: "/federal_reserve.png",
+    title: "LÍDERES",
+    subtitle: "con Renata Vidal",
     duration: "22:15"
   },
   {
-    title: "the circuit",
-    subtitle: "with EMILY CHANG",
-    img: "/middle_east_friendship.png",
+    title: "el circuito",
+    subtitle: "con Camila Reyes",
     duration: "24:10"
   },
   {
-    title: "Quantum MARKETING",
-    subtitle: "with Raja Rajamannar",
-    img: "/russian_inflation.png",
+    title: "MARKETING CUÁNTICO",
+    subtitle: "con Bruno Escalante",
     duration: "28:40"
   },
   {
-    title: "The INFINITE EXPLORER",
-    subtitle: "with Hannah Fry",
-    img: "/middle_east_friendship.png",
+    title: "EL EXPLORADOR INFINITO",
+    subtitle: "con Ismael Duarte",
     duration: "19:52"
   },
   {
-    title: "Short Docs",
-    subtitle: "BLOOMBERG ORIGINALS",
-    img: "/federal_reserve.png",
+    title: "Documentales Cortos",
+    subtitle: "ORIGINALES SEGUNDA DERIVADA",
     duration: "12:15"
   },
   {
-    title: "Weekly Docs",
-    subtitle: "BLOOMBERG ORIGINALS",
-    img: "/primer.png",
+    title: "Documentales Semanales",
+    subtitle: "ORIGINALES SEGUNDA DERIVADA",
     duration: "30:00"
   }
 ];
@@ -59,30 +51,29 @@ export default function MediaPage() {
 
   return (
     <div className="flex flex-col bg-black text-white font-sans flex-1">
-      
-      {/* Sub Header for Bloomberg Originals */}
+
+      {/* Sub Header para Originales */}
       <div className="border-b border-zinc-900 bg-black">
         <div className="mx-auto max-w-[1280px] px-4 pt-6 pb-4">
-          <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#ff3366] mb-1 block">Bloomberg</span>
+          <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#ff3366] mb-1 block">Segunda Derivada</span>
           <h1 className="font-serif text-5xl font-black tracking-tight text-white leading-none">
-            Originals
+            Originales
           </h1>
           <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs font-bold text-zinc-400 border-t border-zinc-900 pt-3 mt-4">
-            <a href="#originals" className="hover:text-white transition-colors text-white border-b-2 border-[#ff3366] pb-1">All Shows</a>
-            <a href="#podcasts" className="hover:text-white transition-colors">Podcasts</a>
-            <a href="#live" className="hover:text-white transition-colors">Live TV</a>
+            <a href="#originales" className="hover:text-white transition-colors text-white border-b-2 border-[#ff3366] pb-1">Todos los Programas</a>
+            <a href="/podcast" className="hover:text-white transition-colors">Podcasts</a>
           </nav>
         </div>
       </div>
 
       {/* Main Content Area */}
       <main className="mx-auto w-full max-w-[1280px] px-4 py-8">
-        
-        {/* Main Video Hero Player (Cinematic Header) */}
+
+        {/* Reproductor Principal (Hero cinematográfico) */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-zinc-900 pb-10 mb-10">
           <div className="lg:col-span-8">
             <div className="relative aspect-video w-full bg-zinc-950 border border-zinc-900 rounded-md overflow-hidden group">
-              <img src={activeShow.img} className="absolute inset-0 w-full h-full object-cover opacity-75" alt="Video Player" />
+              <div className="absolute inset-0 bg-gradient-to-br from-zinc-800 to-zinc-950" />
               <div className="absolute inset-0 bg-black/35 flex items-center justify-center">
                 <button
                   onClick={() => setIsPlaying(!isPlaying)}
@@ -104,9 +95,9 @@ export default function MediaPage() {
               </div>
             </div>
           </div>
-          
+
           <div className="lg:col-span-4 flex flex-col justify-center">
-            <span className="text-[10px] font-black uppercase text-[#ff3366] tracking-wider mb-2 block">NOW PLAYING SHOW</span>
+            <span className="text-[10px] font-black uppercase text-[#ff3366] tracking-wider mb-2 block">REPRODUCIENDO AHORA</span>
             <h2 className="font-serif text-3.5xl font-black leading-tight text-white mb-2">
               {activeShow.title}
             </h2>
@@ -114,18 +105,18 @@ export default function MediaPage() {
               {activeShow.subtitle}
             </p>
             <p className="text-sm text-zinc-400 leading-relaxed mb-6">
-              Watch exclusive episodes, documentaries, and investigative reports from the editors of Bloomberg.
+              Mira episodios exclusivos, documentales y reportajes de investigación de nuestro equipo editorial.
             </p>
             <button className="self-start bg-white hover:bg-zinc-200 text-black px-6 py-2.5 text-xs font-black uppercase tracking-wider rounded-none transition-colors">
-              Add to Watchlist
+              Agregar a Mi Lista
             </button>
           </div>
         </section>
 
-        {/* All Originals Section (The requested Grid with 3:4 Posters) */}
-        <section id="originals" className="mb-12">
+        {/* Grilla de Todos los Programas */}
+        <section id="originales" className="mb-12">
           <h3 className="text-lg font-black uppercase tracking-wider text-white mb-6">
-            All Originals
+            Todos los Originales
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {SHOWS.map((show, idx) => (
@@ -137,10 +128,7 @@ export default function MediaPage() {
                 }}
                 className={`group cursor-pointer flex flex-col transition-all duration-200 transform hover:scale-[1.01] ${activeShow.title === show.title ? 'ring-2 ring-[#ff3366]' : ''}`}
               >
-                <div className="relative aspect-[3/4] w-full mb-3 overflow-hidden rounded-md border border-zinc-900 bg-zinc-950">
-                  <img src={show.img} className="absolute inset-0 w-full h-full object-cover opacity-85 group-hover:opacity-100 transition-opacity" alt={show.title} />
-                  
-                  {/* Poster details overlay matching the screenshot style */}
+                <div className="relative aspect-[3/4] w-full mb-3 overflow-hidden rounded-md border border-zinc-900 bg-gradient-to-br from-zinc-700 to-zinc-950">
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent flex flex-col justify-end p-4">
                     <span className="text-[9px] font-black uppercase text-zinc-400 tracking-wider mb-0.5">
                       {show.subtitle}

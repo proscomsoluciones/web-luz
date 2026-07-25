@@ -7,10 +7,10 @@ export default function Footer() {
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-center">
           <div className="flex flex-col gap-2">
             <span className="font-sans text-lg font-black uppercase tracking-[0.1em] text-white">
-              Proyecto Luz
+              Segunda Derivada
             </span>
             <p className="text-[10px] text-zinc-500">
-              © 2026 Proyecto Luz L.P. Todos los derechos reservados.
+              © 2026 Segunda Derivada L.P. Todos los derechos reservados.
             </p>
           </div>
 

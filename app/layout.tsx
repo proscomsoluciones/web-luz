@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "nombre web",
-  description: "description",
+  title: "Segunda Derivada",
+  description: "Segunda Derivada - Noticias, Economía y Análisis",
 };
 
 export default function RootLayout({

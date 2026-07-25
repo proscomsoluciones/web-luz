@@ -1,29 +1,22 @@
-export interface VideoItem {
-  imageSrc: string;
-  duration: string;
-  title: string;
-}
+"use client";
 
-interface VideoSectionProps {
-  title: string;
-  videos: VideoItem[];
-}
+export default function SeccionEntrevistas() {
+  const entrevistas = [
+    { title: "La demanda de viajes resiste el alza en combustibles", duration: "6:13" },
+    { title: "Ganancias trimestrales impulsan movimientos accionarios", duration: "4:14" },
+    { title: "Un fabricante de semiconductores debuta con récord en bolsa", duration: "2:09" },
+    { title: "Entrevista semanal sobre la volatilidad del petróleo", duration: "7:26" },
+  ];
 
-export function VideoSection({ title, videos }: VideoSectionProps) {
   return (
     <div className="border-t border-zinc-200 mt-10 pt-8">
       <h3 className="font-sans text-lg font-black uppercase text-zinc-900 mb-6">
-        {title}
+        Entrevistas
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        {videos.map((video, index) => (
-          <article key={index} className="group cursor-pointer">
+        {entrevistas.map((video, idx) => (
+          <article key={idx} className="group cursor-pointer">
             <div className="relative aspect-video w-full bg-zinc-900 rounded-md overflow-hidden mb-2">
-              <img
-                src={video.imageSrc}
-                className="absolute inset-0 w-full h-full object-cover opacity-60"
-                alt={video.title}
-              />
               <div className="absolute inset-0 flex items-center justify-center bg-zinc-850 opacity-40 group-hover:opacity-60 transition-opacity" />
               <span className="absolute bottom-2 left-2 bg-black/80 text-[10px] font-black text-white px-2 py-0.5 rounded-none flex items-center gap-1.5">
                 ▶ {video.duration}

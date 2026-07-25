@@ -75,7 +75,7 @@ export default function OpinionPage() {
   const [email, setEmail] = useState("");
 
   return (
-    <div className="flex flex-col bg-white text-black font-sans min-h-screen">
+    <div className="flex flex-col bg-white text-black font-sans flex-1">
       
       {/* 1. TOP AD BANNER */}
       <div className="w-full bg-[#f3f3f3] border-b border-zinc-200 py-3 flex justify-center">

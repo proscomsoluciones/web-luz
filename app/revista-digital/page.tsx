@@ -52,7 +52,7 @@ export default function RevistaDigitalPage() {
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
 
   return (
-    <div className="flex flex-col bg-white text-zinc-950 font-sans min-h-screen">
+    <div className="flex flex-col bg-white text-zinc-950 font-sans flex-1">
       
       {/* Top Banner Advertisement (Black and White style matching the screenshot) */}
       <div className="border-b border-zinc-200 bg-[#f3f3f3] py-3 text-center w-full">

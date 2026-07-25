@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-zinc-800 bg-black text-zinc-400 py-8">
+    <footer className="border-t border-zinc-800 bg-black text-zinc-400 py-8 mt-auto">
       <div className="mx-auto max-w-[1280px] px-6">
         
         {/* Bottom branding and terms */}

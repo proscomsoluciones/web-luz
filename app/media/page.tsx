@@ -58,7 +58,7 @@ export default function MediaPage() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <div className="flex flex-col bg-black text-white font-sans min-h-screen">
+    <div className="flex flex-col bg-black text-white font-sans flex-1">
       
       {/* Sub Header for Bloomberg Originals */}
       <div className="border-b border-zinc-900 bg-black">

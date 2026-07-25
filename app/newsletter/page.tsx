@@ -69,7 +69,7 @@ export default function NewsletterPage() {
   };
 
   return (
-    <div className="flex flex-col bg-white text-zinc-950 font-sans min-h-screen">
+    <div className="flex flex-col bg-white text-zinc-950 font-sans flex-1">
       
       {/* Top Banner Advertisement */}
       <div className="border-b border-zinc-200 bg-[#f3f3f3] py-2 text-center w-full">

@@ -43,7 +43,7 @@ const STORIES = [
 
 export default function NosotrosPage() {
   return (
-    <div className="flex flex-col bg-white text-zinc-950 font-sans min-h-screen">
+    <div className="flex flex-col bg-white text-zinc-950 font-sans flex-1">
       
       {/* 1. Hero Section */}
       <section className="relative min-h-[480px] flex items-center bg-black text-white overflow-hidden">

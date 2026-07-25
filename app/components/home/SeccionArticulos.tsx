@@ -2,10 +2,10 @@
 
 export default function SeccionArticulos() {
   const articulos = [
-    { title: "How Once-Struggling SK Hynix Became a Trillion-Dollar Company", image: "/middle_east_friendship.png" },
-    { title: "How Trump and AI Data Centers Are Boosting Nuclear Power", image: "/federal_reserve.png" },
-    { title: "How the Future of Hormuz Is Testing Oman's Balancing Act", image: "/russian_inflation.png" },
-    { title: "Why Europe's New Digital Border Checks Are Causing Big Delays", image: "/middle_east_friendship.png" },
+    { title: "Cómo una minera en dificultades se convirtió en una compañía de un billón de dólares" },
+    { title: "Cómo los centros de datos impulsan la demanda de energía nuclear" },
+    { title: "Cómo el futuro del comercio marítimo pone a prueba el equilibrio regional" },
+    { title: "Por qué los nuevos controles fronterizos digitales generan demoras" },
   ];
 
   return (
@@ -16,9 +16,7 @@ export default function SeccionArticulos() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {articulos.map((article, idx) => (
           <article key={idx} className="flex flex-col">
-            <div className="aspect-video w-full mb-3 rounded-md overflow-hidden relative border border-zinc-200">
-              <img src={article.image} className="absolute inset-0 w-full h-full object-cover" alt={article.title} />
-            </div>
+            <div className="aspect-video w-full mb-3 rounded-md overflow-hidden relative border border-zinc-200 bg-gradient-to-br from-zinc-200 to-zinc-350" />
             <h4 className="text-xs font-bold leading-snug text-black hover:text-blue-600 cursor-pointer">
               {article.title}
             </h4>

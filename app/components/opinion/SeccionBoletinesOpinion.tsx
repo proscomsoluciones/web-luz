@@ -2,10 +2,10 @@
 
 export default function SeccionBoletinesOpinion() {
   const newsletters = [
-    { author: "John Authers | Columnist", title: "The Oil Question That Really Matters for Stocks", img: "/middle_east_friendship.png" },
-    { author: "Jessica Karl | Columnist", title: "Will AI Steal Jobs? It's Already Stolen the Job Search", img: "/russian_inflation.png" },
-    { author: "Matt Levine | Columnist", title: "LSE Will Trade 22.83 Hours a Day", img: "/federal_reserve.png" },
-    { author: "John Authers | Columnist", title: "Chancellor Healey Is Back. The '70s Needn't Be", img: "/middle_east_friendship.png" },
+    { author: "Andrea Solís | Columnista", title: "La pregunta sobre el petróleo que realmente importa para las bolsas" },
+    { author: "Ismael Duarte | Columnista", title: "¿La IA robará empleos? Ya se robó la búsqueda de empleo" },
+    { author: "Camila Reyes | Columnista", title: "La bolsa local ampliará su horario de operación" },
+    { author: "Andrea Solís | Columnista", title: "El ajuste fiscal de los 2000 no tiene por qué repetirse" },
   ];
 
   return (
@@ -16,9 +16,7 @@ export default function SeccionBoletinesOpinion() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {newsletters.map((item, idx) => (
           <article key={idx} className="flex flex-col group cursor-pointer">
-            <div className="aspect-video w-full mb-3 rounded-md overflow-hidden relative border border-zinc-200 bg-zinc-50">
-              <img src={item.img} className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-300" alt={item.title} />
-            </div>
+            <div className="aspect-video w-full mb-3 rounded-md overflow-hidden relative border border-zinc-200 bg-gradient-to-br from-zinc-200 to-zinc-400" />
             <span className="text-[11px] text-blue-600 font-bold mb-1">
               {item.author}
             </span>

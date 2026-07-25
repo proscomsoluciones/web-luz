@@ -13,16 +13,16 @@ export default function TarjetaCuestionario() {
           </span>
         </div>
         <span className="text-[10px] font-black uppercase text-black tracking-widest bg-black/10 px-2 py-0.5 rounded-full">
-          WEEKLY QUIZ
+          QUIZ SEMANAL
         </span>
       </div>
 
       <h4 className="font-serif text-2xl font-black uppercase tracking-tight text-black leading-none mt-1">
-        THE NEWS<br />QUIZ FOR...
+        PON A PRUEBA<br />TUS DATOS
       </h4>
-      
+
       <p className="text-xs font-bold text-black/80">
-        Test your knowledge on this week&apos;s top economic stories.
+        Evalúa qué tanto sabes sobre las historias económicas de esta semana.
       </p>
     </div>
   );

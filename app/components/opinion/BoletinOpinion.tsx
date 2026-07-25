@@ -18,10 +18,10 @@ export default function BoletinOpinion() {
         </div>
         <div>
           <h4 className="text-sm font-black text-black leading-snug">
-            Get the Opinion newsletter bundle
+            Recibe el paquete de newsletters de Opinión
           </h4>
           <p className="text-[11px] text-zinc-500 mt-1 leading-tight">
-            Matt Levine&apos;s Money Stuff, John Authers&apos; Points of Return and Jessica Karl&apos;s Opinion Today.
+            Mercados en Perspectiva de Andrea Solís, Punto de Retorno de Ismael Duarte y Opinión del Día de Camila Reyes.
           </p>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function BoletinOpinion() {
           onChange={(e) => setOffersCheckbox(e.target.checked)}
           className="mt-0.5 rounded-xs border-zinc-300 text-black focus:ring-0" 
         />
-        <span>Segunda Derivada may send me offers and promotions.</span>
+        <span>Segunda Derivada puede enviarme ofertas y promociones.</span>
       </label>
 
       {/* Botón Sign Up */}
@@ -53,11 +53,11 @@ export default function BoletinOpinion() {
         onClick={() => setSubscribed(!subscribed)}
         className="w-full bg-black text-white hover:bg-zinc-800 font-bold text-xs py-2 px-4 rounded-full flex items-center justify-center gap-1 transition-colors"
       >
-        <span>+</span> {subscribed ? "Signed Up!" : "Sign Up"}
+        <span>+</span> {subscribed ? "¡Registrado!" : "Registrarme"}
       </button>
 
       <p className="text-[10px] text-zinc-400 mt-3 leading-tight">
-        By continuing, I agree to the <a href="#" className="underline hover:text-zinc-600">Privacy Policy</a> and <a href="#" className="underline hover:text-zinc-600">Terms of Service</a>.
+        Al continuar, acepto la <a href="#" className="underline hover:text-zinc-600">Política de Privacidad</a> y los <a href="#" className="underline hover:text-zinc-600">Términos de Servicio</a>.
       </p>
     </div>
   );

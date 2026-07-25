@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <div className="w-full h-[88px]">
       {/* Main Header */}
-      <header className="fixed top-0 left-0 w-full z-50 border-b border-zinc-800 bg-black text-white font-sans py-4">
+      <header className="fixed top-0 left-0 w-full z-50 border-b border-zinc-800 bg-gray-800 text-white font-sans py-4">
         <div className="mx-auto flex h-14 max-w-[1280px] items-center justify-between px-4">
 
           {/* Left Menu Button and Navigation Links */}

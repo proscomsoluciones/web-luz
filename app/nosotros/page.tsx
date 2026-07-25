@@ -1,3 +1,5 @@
+import BannerPublicidad from "../components/home/BannerPublicidad";
+
 const CAREER_LINKS = [
   { label: "Qué hacemos", href: "#" },
   { label: "Nuestra cultura", href: "#" },
@@ -80,9 +82,6 @@ export default function NosotrosPage() {
                     className="group flex items-center justify-between py-5 text-base sm:text-lg font-bold text-zinc-100 hover:text-white transition-colors"
                   >
                     <span>{link.label}</span>
-                    <span className="transform group-hover:translate-x-1.5 transition-transform duration-200">
-                      →
-                    </span>
                   </a>
                 ))}
               </div>
@@ -120,9 +119,6 @@ export default function NosotrosPage() {
                     className="group flex items-center justify-between py-4 border-b border-zinc-200 text-sm sm:text-base font-black text-zinc-900 hover:text-blue-700 transition-colors"
                   >
                     <span>{value.label}</span>
-                    <span className="transform group-hover:translate-x-1 transition-transform duration-200">
-                      →
-                    </span>
                   </a>
                 ))}
               </div>
@@ -161,7 +157,7 @@ export default function NosotrosPage() {
 
             <div className="lg:col-span-4 flex flex-col justify-start">
               <div className="border-t border-black pt-4 mb-4">
-                <span className="text-[11px] font-black uppercase tracking-wider text-zinc-400 block mb-1">
+                <span className="text-[11px] font-black uppercase tracking-wider text-[#999999] block mb-1">
                   Áreas de enfoque
                 </span>
                 <div className="h-0.5 w-full bg-zinc-200" />
@@ -216,10 +212,6 @@ export default function NosotrosPage() {
                       {story.description}
                     </p>
                   </div>
-
-                  <div className="text-xl text-black group-hover:translate-x-2 transition-transform duration-200">
-                    →
-                  </div>
                 </div>
 
               </article>
@@ -228,19 +220,12 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      {/* 6. Closing CTA */}
-      <section className="bg-white pb-24">
-        <div className="mx-auto max-w-[1280px] px-4 sm:px-6">
-          <div className="flex flex-col items-center text-center border-t border-zinc-200 pt-16">
-            <h2 className="font-serif text-3xl sm:text-4xl font-black text-black mb-8">
-              Haz que suceda aquí.
-            </h2>
-            <button className="bg-black hover:bg-zinc-800 text-white transition-colors px-10 py-4 text-xs font-black uppercase tracking-wider rounded-none shadow-md">
-              Ver Vacantes
-            </button>
-          </div>
-        </div>
-      </section>
+      {/*Seccion Banner Publicidad */}
+
+      <div className="container mx-auto mb-10 w-[70%]">
+        <BannerPublicidad/>
+      </div>
+      
 
     </div>
   );
